@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>地铁票价计算器</title>
+	<script src="http://libs.useso.com/js/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-select.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+</head>
+<body>
+
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="page-header">
+				<h1>
+					地铁票价计算器 <small>beta</small>
+				</h1>
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span3">
+			<div class="alert alert-success">
+				<h4>
+					提示!
+				</h4> 
+				<p>请选择</p>
+			</div>
+		</div>
+		<div class="span6">
+			<div class="row-fluid">
+				<div class="span6 well start">
+					 <span class="label">起始站</span>
+						<select id="basic" class="selectpicker show-tick form-control select-line start" data-live-search="true">
+							<option disabled>选择线路</option>
+						</select>
+						<br>
+						<select id="basic" class="selectpicker show-tick form-control select-station start" data-live-search="true">
+							<option disabled>选择车站</option>
+						</select>
+				</div>
+				<div class="span6 well end">
+					 <span class="label">终点站</span>
+ 						<select id="basic" class="selectpicker show-tick form-control select-line end" data-live-search="true">
+							<option disabled>选择线路</option>
+						</select>
+						<br>
+						<select id="basic" class="selectpicker show-tick form-control select-station end" data-live-search="true">
+							<option disabled>选择车站</option>
+						</select>
+					 <button class="btn btn-primary" type="button">查询</button>
+				</div>
+			</div>
+		</div>
+		<div class="span3">
+			<p>
+				详情：起步6公里内每人次3元，6-12公里每人次4元，12-32公里每10公里增加1元，32公里以上每20公里增加1元，票价不封顶。（市发改委）
+			</p>
+		</div>
+	</div>
+</div>
+<script src="js/main.js"></script>
+
+</body>
+</html>
